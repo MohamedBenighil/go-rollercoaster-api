@@ -185,7 +185,7 @@ func main() {
 	http.HandleFunc("/coasters", coasterHandlers.coasters)
 	http.HandleFunc("/coasters/", coasterHandlers.getCoaster)
 	http.HandleFunc("/admin", admin.handler)
-	err := http.ListenAndServe(":8080", nil)
+	err := http.ListenAndServe(":8000", nil)
 	if err != nil {
 		panic(err)
 	}
